@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="kodluyoruz,proje,eğitim,html,css,javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Alıştırma</title>
+</head>
+<body>
+    <p id="sayfabasi">Lorem ipsum dolor sit amet consectetur.</p>
+
+    <!-- Block ve Inline elementlerle Çalışmak 
+        block - bulunduğu satırın tamamını kaplar.
+        inline - sadece kendi alanı kadar yer kaplar.
+        div >> block halinde bir kutu iken,
+        span >> inline bir kutudur.
+    --> 
+
+    <!-- Linklerle Çalışmak -->
+    <!-- 
+        -baska bir web sitesine git.
+        -baska bir sayfaya git.
+        ayni sayfa icinde bir yere ? ID ->  git.
+        -mail at.
+        -telefon et.
+
+     -->
+    <h2>Linklerle Çalışmak</h2>
+    <ul>
+        <li><a href="https://www.kodluyoruz.org/" target="_blank">Kodluyoruz</a></li>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="#sayfasonu">Sayfa sonuna git.</a></li>
+        <li><a href="mailto:info@kodluyoruz.org">Kodluyoruz'a mail at</a></li>
+        <li><a href="tel:00901556677">Kodluyoruz'a telefon et</a></li>
+    </ul>
+
+    <hr>
+    <!-- Görsellerle Çalışmak -->
+    <!-- img -->
+    <img src="https://picsum.photos/200/300" alt="Lorem Picsum" border="2">
+    <img src="../images/dock.jpg" alt="Dock İmage" width="480px" height="320px" align="">
+    <a href="https://www.patika.dev/" target="_blank">
+    <img src="https://picsum.photos/300/300" alt="Lorem Picsum">
+    </a>
+    <hr>
+    <!-- map ve area ile resim üzerinde herhangi bir koordinat alanına tıklandığında çalışan linkler yapılabilir. -->
+    <!-- Picture etiketi ile birden fazla resim kaynağı eklenip sayfanın boyutuna göre bu resimler gösterilebilir. -->
+
+
+    <!-- Sıralı Listeler -> 1,2,3, şeklinde devam eden sayılarla oluşturulan sıralı (ordered list) listeler -->
+    <ol>
+        <li>Çay</li>
+        <li>Kahve</li>
+        <li>Limonata</li>
+    </ol>
+
+    <!-- Sıralı olmayan (unordered list) listeler -->
+    <ul>
+        <li>Çay</li>
+        <li>Kahve</li>
+        <li>Limomata</li>
+    </ul>
+
+    <!-- İç içe listeler tanımlanabilir -->
+    <ol>
+        <li>Çay</li>
+        <li>Kahve</li>
+        <li>Limonata</li>
+        <li>
+            <ul>
+                <li>Çay</li>
+                <li>Kahve</li>
+                <li>Limomata</li>
+            </ul>
+        </li>
+    </ol>
+
+    <p style="text-decoration: underline;"> <strong> İyi bir Front-End Developer olmak isteniyorsa yapılması gerekenler? </strong></p>
+    <ol type="I">
+        
+        <li>Öncelikle yol haritası çıkarılacak.</li>
+        <li>Patika üzerindeki eğitimler eksiksiz ve dikkatli bir şekilde bitirilecek.</li>
+        <li>Öğrenilen konularla alaklı bol örnek yapılacak.</li>
+        <li>Ve yine bıkmadan usanmadan odaklanmış bir şekilde çalışılacak.</li>
+    </ol>
+
+    
+    <h2>VS CODE EMMET İLE DAHA HIZLI HTML YAPILARI OLUŞTURMAK</h2> 
+    <ol>
+        <li> etiket isimlerini direk verebiliriz.</li>
+        <li> + ile kardeş öğe tanımlanabilir.</li>
+        <li> > ile içinde öğe </li>
+        <li> ^ yukarı çık ve öğe oluştur.</li>
+        <li> * ile çarp işlemi uygulanır. p*3 üç paragraf oluştur.</li>
+        <li> lorem ile anlamsız metinler oluşturuyoruz.</li>
+        <li> . ile class tanımlıyoruz.</li>
+        <li> # ile id tanımlıyoruz.</li>
+    </ol>
+    <ol>
+        <p>Çokomelli Not: class ve id arasındaki fark;</p>
+        <li> id, tek seferlik ve benzersizdir. Yani bir etiket için kullanılır.</li>
+        <li> class, birden çok etikete uygulanabilir.</li>
+    </ol>
+
+    <!-- h1+h3>p+ul>li*3^^p -->
+
+    <!--  
+    <h1></h1>
+    <h3>
+        <p></p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </h3>
+    <p></p>
+    -->
+
+    <!-- Lorem Kullanımı
+    - Lorem1 -> tek kelimelik lorem
+    - Lorem5 -> 5 kelimelik lorem
+    - Lorem  -> uzun bir lorem tümcesi oluşturur
+    -->
+
+    <h2>Lorem ile oluşturulan metinler.</h2>
+    <p>Lorem.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui laboriosam eos, quod obcaecati facilis tempore modi iusto debitis tempora eligendi ullam dolorum odit reprehenderit, ea odio nihil iste. Voluptatem?</p>
+
+    <!-- ol>li*3>Lorem2^^h3+p+div.container>p#paragraf>Lorem10 -->
+    <h2>Emmet Alıştırmaları</h2>
+    <ol>
+        <li>Lorem, ipsum.</li>
+        <li>Tempora, reprehenderit.</li>
+        <li>Odio, incidunt!</li>
+    </ol>
+    <h3></h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <div class="container">
+        <p id="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, mollitia?</p>
+    </div>
+    
+    <!-- .navitem>ul>li*4>lorem1 -->
+    <div class="navitem">
+        <ul>
+            <li>Lorem.</li>
+            <li>At.</li>
+            <li>Magnam!</li>
+            <li>Consequuntur.</li>
+        </ul>
+    </div>
+
+    <!-- (ul>.navbar>Lorem2) >> dendiğinde emmet ul içerisinde liste oluşturmak istediğini anlıyor. -->
+    <ul>
+        <li class="navbar">Lorem, ipsum.</li>
+    </ul>
+    <p id="sayfasonu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, mollitia.</p>
+    <a href="#sayfabasi">Sayfa başına git.</a>
+</body>
+</html>
