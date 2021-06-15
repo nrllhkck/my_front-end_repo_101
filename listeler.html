@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="kodluyoruz,proje,eğitim,html,css,javascript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kodluyoruz_HTML Giriş_Ödev-1</title>
+    <title>Listeler Alıştırma</title>
 </head>
 <body>
     <!-- Sıralı Listeler -> 1,2,3, şeklinde devam eden sayılarla oluşturulan sıralı (ordered list) listeler -->
@@ -43,6 +43,76 @@
         <li>Öğrenilen konularla alaklı bol örnek yapılacak.</li>
         <li>Ve yine bıkmadan usanmadan odaklanmış bir şekilde çalışılacak.</li>
     </ol>
+
+    
+    <!-- VS CODE EMMET İLE DAHA HIZLI HTML YAPILARI OLUŞTURMAK -->
+    <!-- 
+        etiket isimlerini direk verebiliriz.
+        + ile kardeş öğe tanımlanabilir.
+        > ile içinde öğe
+        ^ yukarı çık ve öğe oluştur.
+        * ile çarp işlemi uygulanır. p*3 üç paragraf oluştur.
+        lorem ile anlamsız metinler oluşturuyoruz.
+        . ile class tanımlıyoruz. (div.container -> [<div class="container"></div>] oluşturuyoruz)
+        # ile id tanımlıyoruz.
+
+        Çokomelli Not: class ve id arasındaki fark;
+        -> id, tek seferlik ve benzersizdir. Yani bir etiket için kullanılır.
+        -> class, birden çok etikete uygulanabilir.
+     -->
+
+     <!-- h1+h3>p+ul>li*3^^p -->
+
+     <!--  
+     <h1></h1>
+     <h3>
+         <p></p>
+         <ul>
+             <li></li>
+             <li></li>
+             <li></li>
+         </ul>
+     </h3>
+     <p></p>
+     -->
+
+     <!-- Lorem Kullanımı
+        - Lorem1 -> tek kelimelik lorem
+        - Lorem5 -> 5 kelimelik lorem
+        - Lorem  -> uzun bir lorem tümcesi oluşturur
+    -->
+    <p>Lorem.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, qui laboriosam eos, quod obcaecati facilis tempore modi iusto debitis tempora eligendi ullam dolorum odit reprehenderit, ea odio nihil iste. Voluptatem?</p>
+
+    <!-- ol>li*3>Lorem2^^h3+p+div.container>p#paragraf>Lorem10 -->
+
+    <ol>
+        <li>Lorem, ipsum.</li>
+        <li>Tempora, reprehenderit.</li>
+        <li>Odio, incidunt!</li>
+    </ol>
+    <h3></h3>
+    <p></p>
+    <div class="container">
+        <p id="paragraf">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, mollitia?</p>
+    </div>
+    
+    <!-- .navitem>ul>li*4>lorem1 -->
+    <div class="navitem">
+        <ul>
+            <li>Lorem.</li>
+            <li>At.</li>
+            <li>Magnam!</li>
+            <li>Consequuntur.</li>
+        </ul>
+    </div>
+
+    <!-- (ul>.navbar>Lorem2) >> dendiğinde emmet ul içerisinde liste oluşturmak istediğini anlıyor. -->
+    <ul>
+        <li class="navbar">Lorem, ipsum.</li>
+    </ul>
+
 
 </body>
 </html>
